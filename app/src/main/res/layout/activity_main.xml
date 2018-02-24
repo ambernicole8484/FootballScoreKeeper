@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/football1"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/linear_layout_bottom_margin">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/team_name_top_margin"
+                    android:background="@color/background_color"
+                    android:gravity="center"
+                    android:text="@string/team_a"
+                    android:textColor="@color/team_name_color"
+                    android:textSize="@dimen/team_name_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/score_bottom_margin"
+                    android:layout_marginTop="@dimen/score_top_margin"
+                    android:background="@color/background_color"
+                    android:gravity="center"
+                    android:text="@string/score_display"
+                    android:textColor="@color/team_score_color"
+                    android:textSize="@dimen/score_text_size" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addSixTeamA"
+                    android:text="@string/touchdown_button" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addThreeTeamA"
+                    android:text="@string/field_goal_button" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addTwoTeamA"
+                    android:text="@string/safety_button" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addOneTeamA"
+                    android:text="@string/extra_point_button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/team_name_top_margin"
+                    android:background="@color/background_color"
+                    android:gravity="center"
+                    android:text="@string/team_b"
+                    android:textColor="@color/team_name_color"
+                    android:textSize="@dimen/team_name_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/score_bottom_margin"
+                    android:layout_marginTop="@dimen/score_top_margin"
+                    android:background="@color/background_color"
+                    android:gravity="center"
+                    android:text="@string/score_display"
+                    android:textColor="@color/team_score_color"
+                    android:textSize="@dimen/score_text_size" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addSixTeamB"
+                    android:text="@string/touchdown_button" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addThreeTeamB"
+                    android:text="@string/field_goal_button" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addTwoTeamB"
+                    android:text="@string/safety_button" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_button_margin"
+                    android:layout_marginLeft="@dimen/right_left_button_margin"
+                    android:layout_marginRight="@dimen/right_left_button_margin"
+                    android:onClick="addOneTeamB"
+                    android:text="@string/extra_point_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/reset_button_bottom_margin"
+            android:onClick="resetTeamAAndBScore"
+            android:text="@string/reset_button" />
+
+    </RelativeLayout>
+
+</ScrollView>
